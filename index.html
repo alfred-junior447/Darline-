@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- ============================================
+         SITE VITRINE MERRY & LUMËA
+         Décoration de Noël - Lyon, France
+         ============================================ -->
+    
+    <!-- META TAGS SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merry & LUMËA - Décoration de Noël à Lyon. Découvrez nos créations uniques pour sublimer vos fêtes de fin d'année. Livraison rapide et service personnalisé.">
+    <meta name="keywords" content="décoration Noël, Lyon, sapin, guirlande, bougie, cadeau, fête, décoration festive">
+    <meta name="author" content="Merry & LUMËA">
+    
+    <!-- OPEN GRAPH (pour les réseaux sociaux) -->
+    <meta property="og:title" content="Merry & LUMËA - Décoration de Noël à Lyon">
+    <meta property="og:description" content="Découvrez nos créations uniques pour sublimer vos fêtes de fin d'année.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://merry-lumea.netlify.app">
+    <meta property="og:image" content="https://merry-lumea.netlify.app/images/og-image.jpg">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Merry & LUMËA - Décoration de Noël à Lyon">
+    <meta name="twitter:description" content="Découvrez nos créations uniques pour sublimer vos fêtes de fin d'année.">
+    <meta name="twitter:image" content="https://merry-lumea.netlify.app/images/og-image.jpg">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- TITRE -->
+    <title>Merry & LUMËA - Décoration de Noël à Lyon | Créations Uniques</title>
+    
+    <!-- POLICE GOOGLE FONTS (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FONT AWESOME POUR LES ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- FEUILLE DE STYLE -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- GOOGLE MAPS API (pour la carte) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <!-- ============================================
+         BOUTON WHATSAPP FLOTTANT
+         ============================================ -->
+    <a href="https://wa.me/33612345678?text=Bonjour%2C%20je%20souhaite%20avoir%20plus%20d%27informations." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contactez-nous sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- ============================================
+         BOUTON RETOUR EN HAUT
+         ============================================ -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Retour en haut de page">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- ============================================
+         HEADER AVEC LOGO ET MENU
+         ============================================ -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- LOGO -->
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="Logo Merry & LUMËA" width="150" height="60">
+                </a>
+                
+                <!-- MENU DESKTOP -->
+                <nav class="nav-desktop">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#accueil" class="nav-link">Accueil</a></li>
+                        <li class="nav-item"><a href="#apropos" class="nav-link">À Propos</a></li>
+                        <li class="nav-item"><a href="#produits" class="nav-link">Produits</a></li>
+                        <li class="nav-item"><a href="#galerie" class="nav-link">Galerie</a></li>
+                        <li class="nav-item"><a href="#temoinages" class="nav-link">Témoignages</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- BOUTON APPELER (MOBILE) -->
+                <a href="tel:+33612345678" class="call-button" aria-label="Appeler Merry & LUMËA">
+                    <i class="fas fa-phone"></i>
+                </a>
+                
+                <!-- MENU HAMBURGER (MOBILE) -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- MENU MOBILE -->
+        <nav class="nav-mobile" id="navMobile" aria-hidden="true">
+            <ul class="nav-mobile-list">
+                <li class="nav-mobile-item"><a href="#accueil" class="nav-mobile-link">Accueil</a></li>
+                <li class="nav-mobile-item"><a href="#apropos" class="nav-mobile-link">À Propos</a></li>
+                <li class="nav-mobile-item"><a href="#produits" class="nav-mobile-link">Produits</a></li>
+                <li class="nav-mobile-item"><a href="#galerie" class="nav-mobile-link">Galerie</a></li>
+                <li class="nav-mobile-item"><a href="#temoinages" class="nav-mobile-link">Témoignages</a></li>
+                <li class="nav-mobile-item"><a href="#contact" class="nav-mobile-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ============================================
+             SECTION 1 : HERO
+             ============================================ -->
+        <section id="accueil" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="highlight">Merry & LUMËA</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Décoration de Noël unique et sur mesure à Lyon
+                        </p>
+                        <p class="hero-description">
+                            Transformez votre intérieur en un véritable conte de fées pour les fêtes de fin d'année. 
+                            Des créations artisanales qui allient tradition et modernité.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#produits" class="btn btn-primary">
+                                Découvrir nos produits
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                Contactez-nous
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/hero-image.jpg" 
+                             alt="Décoration de Noël élégante avec sapin, guirlandes et bougies" 
+                             width="600" 
+                             height="400"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <!-- ANIMATION DE FOND -->
+            <div class="hero-bg"></div>
+        </section>
+
+        <!-- ============================================
+             SECTION 2 : À PROPOS
+             ============================================ -->
+        <section id="apropos" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Qui sommes-nous ?</span>
+                    <h2 class="section-title">À Propos de Merry & LUMËA</h2>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/about-image.jpg" 
+                             alt="Atelier de création de décoration de Noël" 
+                             width="500" 
+                             height="350"
+                             loading="lazy">
+                    </div>
+                    
+                    <div class="about-text">
+                        <p>
+                            Fondée en 2018 à Lyon, <strong>Merry & LUMËA</strong> est une entreprise passionnée 
+                            par l'art de la décoration festive. Notre mission est de créer des univers magiques 
+                            qui émerveillent petits et grands pendant la période des fêtes.
+                        </p>
+                        
+                        <p>
+                            Nous croyons que chaque détail compte pour créer une ambiance unique. C'est pourquoi 
+                            nous sélectionnons avec soin chaque élément de nos collections, en privilégiant 
+                            des matériaux de qualité et des designs intemporels.
+                        </p>
+                        
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Créations artisanales</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Matériaux durables</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Livraison rapide à Lyon</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Service personnalisé</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-primary">
+                            En savoir plus
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 3 : PRODUITS / SERVICES
+             ============================================ -->
+        <section id="produits" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Notre Collection</span>
+                    <h2 class="section-title">Décoration de Noël</h2>
+                </div>
+                
+                <!-- FILTRES -->
+                <div class="product-filters">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="sapins">Sapins</button>
+                    <button class="filter-btn" data-filter="guirlandes">Guirlandes</button>
+                    <button class="filter-btn" data-filter="bougies">Bougies</button>
+                    <button class="filter-btn" data-filter="deco">Décorations</button>
+                    <button class="filter-btn" data-filter="cadeaux">Cadeaux</button>
+                </div>
+                
+                <!-- GRID DE PRODUITS -->
+                <div class="products-grid" id="productsGrid">
+                    <!-- PRODUIT 1 -->
+                    <article class="product-card" data-category="sapins">
+                        <div class="product-image">
+                            <img src="images/product-1.jpg" 
+                                 alt="Sapin de Noël naturel décoré" 
+                                 width="300" 
+                                 height="200"
+                                 loading="lazy">
+                            <span class="product-badge">Nouveau</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Sapin Nordmann Premium</h3>
+                            <p class="product-description">
+                                Sapin naturel de 180 cm, cultivé en France, avec une forme parfaite.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">129,90 €</span>
+                                <a href="https://wa.me/33612345678?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Sapin%20Nordmann%20Premium." 
+                                   class="btn btn-whatsapp" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Commander Sapin Nordmann Premium sur WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Commander</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- PRODUIT 2 -->
+                    <article class="product-card" data-category="guirlandes">
+                        <div class="product-image">
+                            <img src="images/product-2.jpg" 
+                                 alt="Guirlande lumineuse LED dorée" 
+                                 width="300" 
+                                 height="200"
+                                 loading="lazy">
+                            <span class="product-badge sale">-20%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Guirlande LED Dorée</h3>
+                            <p class="product-description">
+                                Guirlande de 5 mètres avec 100 LED dorées, idéale pour intérieur et extérieur.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">
+                                    <span class="old-price">39,90 €</span>
+                                    31,92 €
+                                </span>
+                                <a href="https://wa.me/33612345678?text=Bonjour%2C%20je%20souhaite%20commander%20la%20Guirlande%20LED%20Dorée." 
+                                   class="btn btn-whatsapp" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Commander Guirlande LED Dorée sur WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Commander</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- PRODUIT 3 -->
+                    <article class="product-card" data-category="bougies">
+                        <div class="product-image">
+                            <img src="images/product-3.jpg" 
+                                 alt="Set de bougies parfumées vanille" 
+                                 width="300" 
+                                 height="200"
+                                 loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bougies Parfumées Vanille</h3>
+                            <p class="product-description">
+                                Set de 6 bougies parfumées à la vanille, temps de combustion : 40 heures.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">24,90 €</span>
+                                <a href="https://wa.me/33612345678?text=Bonjour%2C%20je%20souhaite%20commander%20les%20Bougies%20Parfumées%20Vanille." 
+                                   class="btn btn-whatsapp" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Commander Bougies Parfumées Vanille sur WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Commander</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- PRODUIT 4 -->
+                    <article class="product-card" data-category="deco">
+                        <div class="product-image">
+                            <img src="images/product-4.jpg" 
+                                 alt="Suspension en bois sculpté" 
+                                 width="300" 
+                                 height="200"
+                                 loading="lazy">
+                            <span class="product-badge">Artisanal</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Suspension Étoile en Bois</h3>
+                            <p class="product-description">
+                                Suspension en bois sculpté à la main, diamètre 30 cm, couleur naturelle.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">45,00 €</span>
+                                <a href="https://wa.me/33612345678?text=Bonjour%2C%20je%20souhaite%20commander%20la%20Suspension%20Étoile%20en%20Bois." 
+                                   class="btn btn-whatsapp" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Commander Suspension Étoile en Bois sur WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Commander</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- PRODUIT 5 -->
+                    <article class="product-card" data-category="cadeaux">
+                        <div class="product-image">
+                            <img src="images/product-5.jpg" 
+                                 alt="Coffret cadeau décoration Noël" 
+                                 width="300" 
+                                 height="200"
+                                 loading="lazy">
+                            <span class="product-badge">Cadeau</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Coffret Cadeau Festif</h3>
+                            <p class="product-description">
+                                Coffret comprenant : 2 bougies, 1 décoration murale, 1 guirlande mini.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">59,90 €</span>
+                                <a href="https://wa.me/33612345678?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Coffret%20Cadeau%20Festif." 
+                                   class="btn btn-whatsapp" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Commander Coffret Cadeau Festif sur WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Commander</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- PRODUIT 6 -->
+                    <article class="product-card" data-category="sapins">
+                        <div class="product-image">
+                            <img src="images/product-6.jpg" 
+                                 alt="Sapin artificiel blanc neige" 
+                                 width="300" 
+                                 height="200"
+                                 loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Sapin Artificiel Blanc</h3>
+                            <p class="product-description">
+                                Sapin artificiel de 150 cm, aspect neige, facile à monter et réutilisable.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">89,90 €</span>
+                                <a href="https://wa.me/33612345678?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Sapin%20Artificiel%20Blanc." 
+                                   class="btn btn-whatsapp" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Commander Sapin Artificiel Blanc sur WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Commander</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- PRODUIT 7 -->
+                    <article class="product-card" data-category="guirlandes">
+                        <div class="product-image">
+                            <img src="images/product-7.jpg" 
+                                 alt="Guirlande de boules rouges et dorées" 
+                                 width="300" 
+                                 height="200"
+                                 loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Guirlande Boules Tradition</h3>
+                            <p class="product-description">
+                                Guirlande de 3 mètres avec 50 boules rouges et dorées, diamètre 6 cm.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">27,50 €</span>
+                                <a href="https://wa.me/33612345678?text=Bonjour%2C%20je%20souhaite%20commander%20la%20Guirlande%20Boules%20Tradition." 
+                                   class="btn btn-whatsapp" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Commander Guirlande Boules Tradition sur WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Commander</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- PRODUIT 8 -->
+                    <article class="product-card" data-category="bougies">
+                        <div class="product-image">
+                            <img src="images/product-8.jpg" 
+                                 alt="Photophore en verre soufflé" 
+                                 width="300" 
+                                 height="200"
+                                 loading="lazy">
+                            <span class="product-badge">Édition Limitée</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Photophore Verre Soufflé</h3>
+                            <p class="product-description">
+                                Photophore en verre soufflé à la bouche, hauteur 20 cm, couleur transparente.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">34,90 €</span>
+                                <a href="https://wa.me/33612345678?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Photophore%20Verre%20Soufflé." 
+                                   class="btn btn-whatsapp" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Commander Photophore Verre Soufflé sur WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Commander</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- PRODUIT 9 -->
+                    <article class="product-card" data-category="deco">
+                        <div class="product-image">
+                            <img src="images/product-9.jpg" 
+                                 alt="Père Noël en bois peint" 
+                                 width="300" 
+                                 height="200"
+                                 loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Père Noël en Bois</h3>
+                            <p class="product-description">
+                                Décoration murale en bois peint à la main, hauteur 40 cm, style traditionnel.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">42,00 €</span>
+                                <a href="https://wa.me/33612345678?text=Bonjour%2C%20je%20souhaite%20commander%20le%20Père%20Noël%20en%20Bois." 
+                                   class="btn btn-whatsapp" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Commander Père Noël en Bois sur WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Commander</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- PRODUIT 10 -->
+                    <article class="product-card" data-category="cadeaux">
+                        <div class="product-image">
+                            <img src="images/product-10.jpg" 
+                                 alt="Carte cadeau Merry & LUMËA" 
+                                 width="300" 
+                                 height="200"
+                                 loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Carte Cadeau</h3>
+                            <p class="product-description">
+                                Carte cadeau valable sur tout notre catalogue, montant au choix : 25€, 50€, 100€.
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-price">25,00 € - 100,00 €</span>
+                                <a href="https://wa.me/33612345678?text=Bonjour%2C%20je%20souhaite%20acheter%20une%20Carte%20Cadeau." 
+                                   class="btn btn-whatsapp" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Acheter Carte Cadeau sur WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>Commander</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- BOUTON VOIR PLUS -->
+                <div class="products-more">
+                    <a href="#contact" class="btn btn-secondary">
+                        Voir tous nos produits (50+ disponibles)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 4 : GALERIE PHOTOS
+             ============================================ -->
+        <section id="galerie" class="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Inspiration</span>
+                    <h2 class="section-title">Galerie Photos</h2>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <a href="images/galerie-1.jpg" class="gallery-link" data-lightbox="gallery">
+                            <img src="images/galerie-1.jpg" 
+                                 alt="Intérieur décoré pour Noël avec sapin et guirlandes" 
+                                 width="400" 
+                                 height="300"
+                                 loading="lazy">
+                            <span class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <a href="images/galerie-2.jpg" class="gallery-link" data-lightbox="gallery">
+                            <img src="images/galerie-2.jpg" 
+                                 alt="Table de Noël décorée avec bougies et centre de table" 
+                                 width="400" 
+                                 height="300"
+                                 loading="lazy">
+                            <span class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <a href="images/galerie-3.jpg" class="gallery-link" data-lightbox="gallery">
+                            <img src="images/galerie-3.jpg" 
+                                 alt="Extérieur illuminé avec guirlandes et lumières de Noël" 
+                                 width="400" 
+                                 height="300"
+                                 loading="lazy">
+                            <span class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <a href="images/galerie-4.jpg" class="gallery-link" data-lightbox="gallery">
+                            <img src="images/galerie-4.jpg" 
+                                 alt="Détail de décoration murale de Noël" 
+                                 width="400" 
+                                 height="300"
+                                 loading="lazy">
+                            <span class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <a href="images/galerie-5.jpg" class="gallery-link" data-lightbox="gallery">
+                            <img src="images/galerie-5.jpg" 
+                                 alt="Atelier de fabrication de décorations de Noël" 
+                                 width="400" 
+                                 height="300"
+                                 loading="lazy">
+                            <span class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <a href="images/galerie-6.jpg" class="gallery-link" data-lightbox="gallery">
+                            <img src="images/galerie-6.jpg" 
+                                 alt="Vitrine de magasin décorée pour les fêtes" 
+                                 width="400" 
+                                 height="300"
+                                 loading="lazy">
+                            <span class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 5 : TÉMOIGNAGES CLIENTS
+             ============================================ -->
+        <section id="temoinages" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Ils nous font confiance</span>
+                    <h2 class="section-title">Témoignages Clients</h2>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <!-- TÉMOIGNAGE 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/avatar-1.jpg" 
+                                 alt="Avatar de Marie D." 
+                                 width="80" 
+                                 height="80"
+                                 loading="lazy">
+                            <div class="testimonial-author">
+                                <h4>Marie D.</h4>
+                                <p>Lyon 2ème</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "J'ai acheté mon sapin chez Merry & LUMËA l'année dernière et j'en suis ravie ! 
+                                La qualité est exceptionnelle et le service client est très professionnel. 
+                                Je recommande vivement !"
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- TÉMOIGNAGE 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/avatar-2.jpg" 
+                                 alt="Avatar de Jean-Marc L." 
+                                 width="80" 
+                                 height="80"
+                                 loading="lazy">
+                            <div class="testimonial-author">
+                                <h4>Jean-Marc L.</h4>
+                                <p>Villeurbanne</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Les guirlandes LED sont magnifiques et très résistantes. J'ai décoré toute ma 
+                                maison et mes voisins sont impressionnés. Le rapport qualité-prix est excellent."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- TÉMOIGNAGE 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/avatar-3.jpg" 
+                                 alt="Avatar de Sophie R." 
+                                 width="80" 
+                                 height="80"
+                                 loading="lazy">
+                            <div class="testimonial-author">
+                                <h4>Sophie R.</h4>
+                                <p>Caluire</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Le coffret cadeau que j'ai offert à ma belle-mère a fait sensation. Elle était 
+                                aux anges en découvrant toutes les petites attentions. Merci pour ce beau moment !"
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- TÉMOIGNAGE 4 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/avatar-4.jpg" 
+                                 alt="Avatar de Thomas B." 
+                                 width="80" 
+                                 height="80"
+                                 loading="lazy">
+                            <div class="testimonial-author">
+                                <h4>Thomas B.</h4>
+                                <p>Lyon 7ème</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Service impeccable et livraison ultra rapide. J'ai commandé un sapin artificiel 
+                                le matin et il était livré l'après-midi même. Parfait pour les oublis de dernière minute !"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SECTION 6 : CONTACT
+             ============================================ -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Contactez-nous</span>
+                    <h2 class="section-title">On serait ravi de vous aider</h2>
+                </div>
+                
+                <div class="contact-content">
+                    <!-- INFORMATIONS -->
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Adresse</h4>
+                                <p>
+                                    123 Rue de la République<br>
+                                    69002 Lyon, France
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Téléphone</h4>
+                                <p>
+                                    <a href="tel:+33612345678">+33 6 12 34 56 78</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>
+                                    <a href="mailto:contact@merry-lumea.fr">contact@merry-lumea.fr</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Horaires</h4>
+                                <p>
+                                    Lundi - Vendredi : 9h - 19h<br>
+                                    Samedi : 10h - 18h<br>
+                                    Dimanche : Fermé
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FORMULAIRE NETLIFY -->
+                    <div class="contact-form">
+                        <form name="contact" 
+                              method="POST" 
+                              action="/success" 
+                              netlify
+                              netlify-honeypot="bot-field">
+                            
+                            <!-- CHAMP ANTI-SPAM -->
+                            <input type="hidden" name="bot-field">
+                            
+                            <!-- NOM -->
+                            <div class="form-group">
+                                <label for="name">Nom et Prénom *</label>
+                                <input type="text" 
+                                       id="name" 
+                                       name="name" 
+                                       placeholder="Votre nom et prénom" 
+                                       required
+                                       aria-required="true">
+                            </div>
+                            
+                            <!-- EMAIL -->
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" 
+                                       id="email" 
+                                       name="email" 
+                                       placeholder="Votre adresse email" 
+                                       required
+                                       aria-required="true">
+                            </div>
+                            
+                            <!-- TÉLÉPHONE -->
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" 
+                                       id="phone" 
+                                       name="phone" 
+                                       placeholder="Votre numéro de téléphone">
+                            </div>
+                            
+                            <!-- SUJET -->
+                            <div class="form-group">
+                                <label for="subject">Sujet *</label>
+                                <select id="subject" name="subject" required aria-required="true">
+                                    <option value="" disabled selected>Choisissez un sujet</option>
+                                    <option value="Renseignements">Renseignements</option>
+                                    <option value="Commande">Commande</option>
+                                    <option value="Devis">Demande de devis</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <!-- MESSAGE -->
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" 
+                                          name="message" 
+                                          rows="5" 
+                                          placeholder="Votre message..." 
+                                          required
+                                          aria-required="true"></textarea>
+                            </div>
+                            
+                            <!-- BOUTON SUBMIT -->
+                            <button type="submit" class="btn btn-primary btn-full">
+                                Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- CARTE GOOGLE MAPS -->
+                <div class="contact-map">
+                    <div id="map" class="map-container"></div>
+                    <p class="map-fallback">
+                        <a href="https://www.google.com/maps?q=123+Rue+de+la+République,+69002+Lyon,+France" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Voir sur Google Maps
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- LOGO ET DESCRIPTION -->
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">
+                        <img src="images/logo-white.png" alt="Logo Merry & LUMËA" width="150" height="60">
+                    </a>
+                    <p class="footer-description">
+                        Décoration de Noël unique et sur mesure à Lyon. 
+                        Transformez vos fêtes en moments magiques.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/merrylumea" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/merrylumea" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@merrylumea" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/merrylumea" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- LIENS RAPIDES -->
+                <div class="footer-links">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#produits">Produits</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="#temoinages">Témoignages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- PRODUITS -->
+                <div class="footer-links">
+                    <h4>Nos Produits</h4>
+                    <ul>
+                        <li><a href="#">Sapins</a></li>
+                        <li><a href="#">Guirlandes</a></li>
+                        <li><a href="#">Bougies</a></li>
+                        <li><a href="#">Décorations</a></li>
+                        <li><a href="#">Cadeaux</a></li>
+                        <li><a href="#">Sur mesure</a></li>
+                    </ul>
+                </div>
+                
+                <!-- CONTACT -->
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Rue de la République, Lyon</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+33612345678">+33 6 12 34 56 78</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:contact@merry-lumea.fr">contact@merry-lumea.fr</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- COPYRIGHT -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Merry & LUMËA. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         SCRIPT PRINCIPAL
+         ============================================ -->
+    <script src="script.js"></script>
+</body>
+</html>

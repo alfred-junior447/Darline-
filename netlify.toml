@@ -1,0 +1,22 @@
+[build]
+  command = "echo 'Site statique - pas de build requis'"
+  publish = "."
+
+[[redirects]]
+  from = "https://www.merry-lumea.fr/*"
+  to = "https://merry-lumea.fr/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
